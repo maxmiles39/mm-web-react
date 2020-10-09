@@ -1,7 +1,8 @@
 import React from 'react';
+import { getMessage } from './service'
 
 function App() {
-  const value = 'World!';
+  const value = getMessage();
   return <div>Hello {value}</div>;
 }
 
