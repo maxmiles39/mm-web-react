@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { getMessage } from './service'
-import { useState } from 'react';
 
 function App() {
   const [message, setMessage] = useState([]);
