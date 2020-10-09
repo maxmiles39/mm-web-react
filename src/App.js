@@ -1,9 +1,11 @@
-import React from 'react';
+import React { useState } from 'react';
 import { getMessage } from './service'
+import { useState } from 'react';
 
 function App() {
-  const value = getMessage();
-  return <div>Hello {value}</div>;
+  const [message, setMessage] = useState([]);
+  getMessage().then(res => setMessage(res.text));
+  return <div>Hello {message}</div>;
 }
 
 export default App;

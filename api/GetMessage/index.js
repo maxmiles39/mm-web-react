@@ -3,7 +3,7 @@ module.exports = async function (context, req) {
 
     context.res = {
         body: {
-            text: " from the Azure Function"
+            text: " from the Azure Function @" + new Date()
         }
     };
 };
